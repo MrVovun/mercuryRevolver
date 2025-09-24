@@ -13,9 +13,7 @@ namespace MR.Systems.Input
         public static bool Sprint => UnityEngine.Input.GetKey(KeyCode.LeftShift);
         public static bool Crouch => UnityEngine.Input.GetKeyDown(KeyCode.LeftControl);
         public static bool Pause => UnityEngine.Input.GetKeyDown(KeyCode.Escape);
-        public static bool Interact => UnityEngine.Input.GetKeyDown(KeyCode.F);
+        public static bool Interact => UnityEngine.Input.GetKeyDown(KeyCode.E);
         public static bool Inventory => UnityEngine.Input.GetKeyDown(KeyCode.Tab);
-        public static bool WeaponWheel => UnityEngine.Input.GetKeyDown(KeyCode.Q);
-        public static bool ToolWheel => UnityEngine.Input.GetKeyDown(KeyCode.E);
     }
 }
