@@ -12,12 +12,12 @@ namespace MR.Core
 
         void Awake()
         {
-            if (Instance != null) { Destroy(this.gameObject); return; }
+            if (Instance != null) { Destroy(gameObject); return; }
             Instance = this;
-            DontDestroyOnLoad(this.gameObject);
+            DontDestroyOnLoad(gameObject);
             Inventory = new Systems.Inventory.InventoryService();
             CaseService = new Systems.Cases.CaseService();
-            Save = new Systems.Save.SaveService();
+            Save = new Systems.Save.SaveService(Inventory, CaseService);
         }
     }
 }

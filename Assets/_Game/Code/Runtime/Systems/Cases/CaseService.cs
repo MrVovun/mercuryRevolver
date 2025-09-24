@@ -25,6 +25,6 @@ namespace MR.Systems.Cases
             }
             return true;
         }
-        public CaseDef ActiveCase() => currentCase;
+        public CaseDef ActiveCase => currentCase;
     }
 }

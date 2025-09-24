@@ -17,6 +17,6 @@ namespace MR.Systems.Inventory
             stacks[itemID] -= amount;
             return true;
         }
-        public IReadOnlyDictionary<string, int> Snapshot => stacks;
+        public IReadOnlyDictionary<string, int> Snapshot() => stacks;
     }
 }
