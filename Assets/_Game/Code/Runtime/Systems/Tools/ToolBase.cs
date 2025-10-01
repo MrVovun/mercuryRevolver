@@ -7,6 +7,7 @@ namespace MR.Systems.Tools
         public string toolID;
         public string displayName;
         public float rechargeTime;
+        public float useDuration;
 
         public abstract bool CanUse();
         public abstract void BeginUse();
