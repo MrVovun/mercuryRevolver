@@ -11,6 +11,8 @@ namespace MR.Systems.Inventory
         Consumable,
         Quest,
         Equipment,
+        Weapon,
+        Tool,
         Currency
     }
 
@@ -38,9 +40,15 @@ namespace MR.Systems.Inventory
         public ItemType itemType = ItemType.Generic;
         public ItemTags itemTags = ItemTags.None;
 
-        [Header("Stacking & Size")]
+        [Header("Stacking")]
         public int maxStack = 999;
-        public int size = 1;
+
+        [Header("Prefab")]
+        public GameObject prefab;
+
+        [Header("Grid Size (for inventory UI)")]
+        [Min (1)] public int gridWidth = 1;
+        [Min (1)] public int gridHeight = 1;
 
         //Helpers
         public bool HasTag(ItemTags tag) => (itemTags & tag) != 0;

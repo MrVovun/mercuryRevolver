@@ -11,5 +11,6 @@ namespace MR.Systems.Cases
         public float baseSpeed = 2.2f;
         public float engageSpeed = 3.4f;
         public float staggerSeconds = 1.0f;
+        public float virtualMaxHP = 100f;
     }
 }

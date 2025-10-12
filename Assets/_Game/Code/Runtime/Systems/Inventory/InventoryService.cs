@@ -24,7 +24,7 @@ namespace MR.Systems.Inventory
         {
             if (amount <= 0) return 0;
 
-            var max = db != null ? db.getmaxStack(itemID) : int.MaxValue;
+            var max = db != null ? db.GetmaxStack(itemID) : int.MaxValue;
             var current = Count(itemID);
             var toAdd = Math.Clamp(amount, 0, Math.Max(0, max - current));
 

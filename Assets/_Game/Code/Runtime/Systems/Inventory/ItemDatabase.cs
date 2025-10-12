@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using MR.Core;
 using UnityEngine;
 
 namespace MR.Systems.Inventory
@@ -24,10 +25,15 @@ namespace MR.Systems.Inventory
             map.TryGetValue(itemID, out var def);
             return def;
         }
-        public int getmaxStack(string itemID)
+        public int GetmaxStack(string itemID)
         {
             var def = Get(itemID);
             return def != null ? def.effectiveMaxStack : int.MaxValue;
+        }
+        public GameObject GetPrefab(string itemID)
+        {
+            var def = Get(itemID);
+            return def != null ? def.prefab : null;
         }
     }
 }

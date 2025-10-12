@@ -9,6 +9,5 @@ namespace MR.Systems.Cases
         public string displayName;
         [TextArea] public string description;
         public Sprite icon;
-        public bool requiredForCase = true;
     }
 }

@@ -9,6 +9,7 @@ namespace MR.Systems.Input
         public static Vector2 Look => new Vector2(UnityEngine.Input.GetAxis("Mouse X"), UnityEngine.Input.GetAxis("Mouse Y"));
         public static bool Fire => UnityEngine.Input.GetMouseButtonDown(0);
         public static bool Aim => UnityEngine.Input.GetMouseButtonDown(1);
+        public static bool NextTool => UnityEngine.Input.GetKeyDown(KeyCode.Tab);
         public static bool Reload => UnityEngine.Input.GetKeyDown(KeyCode.R);
         public static bool Sprint => UnityEngine.Input.GetKey(KeyCode.LeftShift);
         public static bool Crouch => UnityEngine.Input.GetKeyDown(KeyCode.LeftControl);

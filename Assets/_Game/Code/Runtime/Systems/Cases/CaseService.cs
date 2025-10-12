@@ -18,7 +18,7 @@ namespace MR.Systems.Cases
         public bool CanRepose()
         {
             if (currentCase == null) return false;
-            foreach (var clue in currentCase.clues)
+            foreach (var clue in currentCase.requiredClues)
             {
                 if (!foundClues.Contains(clue.clueID))
                     return false;
