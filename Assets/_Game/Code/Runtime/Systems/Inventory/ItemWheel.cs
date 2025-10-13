@@ -30,7 +30,7 @@ namespace MR.Systems.Selection
             if (InputR.NextTool) Cycle();
 
             // Route primary action
-            if (equippedWeapon != null && InputR.Fire) equippedWeapon.Attack();
+            if (equippedWeapon != null && InputR.Fire) equippedWeapon.Fire();
             if (equippedTool != null)
             {
                 if (InputR.Aim && equippedTool.IsReady) equippedTool.TryUse();

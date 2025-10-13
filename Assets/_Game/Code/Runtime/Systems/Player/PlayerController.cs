@@ -1,5 +1,6 @@
 using UnityEngine;
 using MR.Systems.Input;
+using UnityEngine.InputSystem;
 
 namespace MR.Systems.Player
 {
