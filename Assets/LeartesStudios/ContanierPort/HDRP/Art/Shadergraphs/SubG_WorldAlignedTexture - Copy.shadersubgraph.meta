@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 0f0688c29322df844b7c159123bf29b7
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 60072b568d64c40a485e0fc55012dc9f, type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 309998
+  packageName: Container Port Environment ( Shipping Port Cargo Ship Harbor Dock
+    Harbour )
+  packageVersion: 1.0
+  assetPath: Assets/LeartesStudios/ContanierPort/HDRP/Art/Shadergraphs/SubG_WorldAlignedTexture
+    - Copy.shadersubgraph
+  uploadId: 730573
