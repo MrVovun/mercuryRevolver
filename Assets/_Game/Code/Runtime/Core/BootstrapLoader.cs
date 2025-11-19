@@ -8,7 +8,7 @@ namespace MR.Core
     {
         [Header("Loading")]
         [Tooltip("Default scene to load after Bootstrap.")]
-        public string defaultSceneName = "HQ_PoliceStation";
+        public string defaultSceneName;
 
         [Tooltip("In the Unity Editor, load the last played scene instead of default hub.")]
         public bool loadLastPlayedInEditor = true;
